@@ -8,6 +8,11 @@ CC=clang # required by bazel
 .PHONY: help
 help:
 	@echo 'Usage: '
+	# auto-run 
+	@echo '    auto-install:   			Automatically installs cluster & project in one command.'
+	@echo '    auto-update:   			Updates entire project in an existing cluster.'
+
+	# setup commands 
 	@echo '    make setup:   		Installs all requirements and tools.'
 	@echo '    make configure-cloud:	Configures and authenticates cloud provider.'
 
@@ -20,8 +25,11 @@ help:
 	@echo '    make setup-deployment    Prepares container deployment.'
 #	@echo '    make deployment     		Deploys all services with bazel.'
 
-.PHONY : auto-all
-auto-all: setup configure create-cluster
+.PHONY : auto-install
+auto-all: setup configure-cloud create-cluster setup-deployment deployment
+
+.PHONY : auto-update
+auto-update: deployment
 
 # "---------------------------------------------------------"
 # Setup, configuration & installation
