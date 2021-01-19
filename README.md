@@ -9,16 +9,20 @@ Important:
 
 ## Usage:
 
+Auto-mode
+* make auto-install:   		-- Automatically installs cluster & project in one command.'
+* auto-update:   		      -- Updates entire project in an existing cluster.'
+
 Setup: 
-*    make setup   		-- Installs all requirements and tools.
+*    make setup   		    -- Installs all requirements and tools.
 *    make configure-cloud -- Configures and authenticates cloud provider.
 
-cluster commands
-* make create-cluster   -- Creates Kubernetes cluster.
-* make update-cluster   -- Updates Kubernetes cluster.
-* make destroy-cluster 	-- Destroys Kubernetes cluster.
+Cluster commands
+* make create-cluster     -- Creates Kubernetes cluster.
+* make update-cluster     -- Updates Kubernetes cluster.
+* make destroy-cluster 	  -- Destroys Kubernetes cluster.
 
 Deployment:
 
-* make setup-deployment    -- Prepares container deployment.
+* make setup-deployment   -- Prepares container deployment.
 * make deployment     		-- Deploys all services with bazel & K8s rules 
