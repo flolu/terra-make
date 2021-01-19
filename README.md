@@ -2,7 +2,7 @@
 
 Make & Bash scripts to fully automate GKE cluster creation, management, deployment with terraform, Bazel, and Bash. 
 
-Important: All terraform confinguration files must be present at the path {root}/terraform/main
+Important: All terraform configuration files must be present at the path {root}/terraform/main
 
 See provided 
 
