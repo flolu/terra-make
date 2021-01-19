@@ -9,8 +9,8 @@ CC=clang # required by bazel
 help:
 	@echo 'Usage: '
 	# auto-run 
-	@echo '    auto-install:   			Automatically installs cluster & project in one command.'
-	@echo '    auto-update:   			Updates entire project in an existing cluster.'
+	@echo '    auto-install:   		Automatically installs cluster & project in one command.'
+	@echo '    auto-update:   		Updates entire project in an existing cluster.'
 
 	# setup commands 
 	@echo '    make setup:   		Installs all requirements and tools.'
@@ -22,7 +22,7 @@ help:
 	@echo '    make destroy-cluster: 	Destroys Kubernetes cluster.'
 
 	# container commands
-	@echo '    make setup-deployment    Prepares container deployment.'
+	@echo '    make setup-deployment    	Prepares container deployment.'
 #	@echo '    make deployment     		Deploys all services with bazel.'
 
 .PHONY : auto-install
