@@ -7,26 +7,29 @@ CC=clang # required by bazel
 
 .PHONY: help
 help:
-	@echo 'Usage: '
-	# auto-run 
-	@echo '    auto-install:   		Automatically installs cluster & project in one command.'
-	@echo '    auto-update:   		Updates entire project in an existing cluster.'
+	@echo ''
+	@echo "auto-mode"
+	@echo '    auto-install   		Automatically installs cluster & project in one command.'
+	@echo '    auto-update   		Updates entire project in an existing cluster.'
 
-	# setup commands 
-	@echo '    make setup:   		Installs all requirements and tools.'
-	@echo '    make configure-cloud:	Configures and authenticates cloud provider.'
+	@echo ''	
+	@echo "Setup & installation"
+	@echo '    make setup   		Installs all requirements and tools.'
+	@echo '    make configure-cloud	Configures and authenticates cloud provider.'
 
-	# cluster commands
-	@echo '    make create-cluster:  	Creates Kubernetes cluster.'
-	@echo '    make update-cluster:  	Updates Kubernetes cluster.'
-	@echo '    make destroy-cluster: 	Destroys Kubernetes cluster.'
+	@echo ''
+	@echo "Cluster commands"
+	@echo '    make create-cluster  	Creates Kubernetes cluster.'
+	@echo '    make update-cluster  	Updates Kubernetes cluster.'
+	@echo '    make destroy-cluster 	Destroys Kubernetes cluster.'
 
-	# container commands
-	@echo '    make setup-deployment    	Prepares container deployment.'
-#	@echo '    make deployment     		Deploys all services with bazel.'
+	@echo ''
+	@echo "Container commands"
+	@echo '    make configure-deployment    Prepares container deployment.'
+	@echo '    make deployment     	 Deploys all services with bazel.'
 
 .PHONY : auto-install
-auto-all: setup configure-cloud create-cluster setup-deployment deployment
+auto-all: setup configure-cloud create-cluster configure-deployment deployment
 
 .PHONY : auto-update
 auto-update: deployment
@@ -60,8 +63,8 @@ destroy-cluster:
 # "---------------------------------------------------------"
 # Deploy containers to the cluster
 # "---------------------------------------------------------"
-.PHONY: setup-deployment
-setup-deployment:
+.PHONY: configure-deployment
+configure-deployment:
 	# Make sure kubectl is correctly configured for deployments!
 	@source scripts/containers/setup-deployment.sh
 
