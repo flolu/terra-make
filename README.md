@@ -10,8 +10,8 @@ Important:
 ## Usage:
 
 Auto-mode
-* make auto-install:   		-- Automatically installs cluster & project in one command.'
-* auto-update:   		      -- Updates entire project in an existing cluster.'
+* make auto-install:   		-- Automatically installs cluster & project in one command.
+* auto-update:   		      -- Updates entire project in existing cluster.
 
 Setup: 
 *    make setup   		    -- Installs all requirements and tools.
