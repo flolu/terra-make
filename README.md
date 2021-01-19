@@ -24,5 +24,5 @@ Cluster commands
 
 Deployment:
 
-* make setup-deployment   -- Prepares container deployment.
+* make configure-deployment   -- Prepares container deployment.
 * make deployment     		-- Deploys all services with bazel & K8s rules 
