@@ -4,7 +4,7 @@ Make & Bash scripts to fully automate GKE cluster creation, management, deployme
 
 Important: 
 * All terraform configuration files must be present at the path {root}/terraform/main
-* Google cloud only for now. Porting the scripts to other Cloud proividers largely means replacing the terraform configuration and the glocud references. 
+* Google cloud only for now. Porting the scripts to other Cloud proividers largely means replacing the terraform configuration. 
 * No bazel config provided. Bazel is well documented and those who use Bazel already have a working configuration anyway. 
 
 ## Usage:
