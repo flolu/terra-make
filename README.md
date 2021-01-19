@@ -18,8 +18,8 @@ Make & Bash scripts to fully automate GKE cluster creation, management, deployme
 2. cd terra-make
 3. make 
 
-From here, if you have  you can either run any of the commands 
-
+Note, some deployment scripts may not work due to missing bazel targets. Feel free to adopt to build your own project. 
+The setup & cluster scripts should work fine b/c during setup all requirements used in these scripts get installed if not already present. 
 
 ## Usage:
 
