@@ -2,10 +2,24 @@
 
 Make & Bash scripts to fully automate GKE cluster creation, management, deployment with terraform, Bazel, and Bash. 
 
-Important: 
+## Important: 
 * All terraform configuration files must be present at the path {root}/terraform/main
 * Google cloud only for now. Porting the scripts to other Cloud proividers largely means replacing the terraform configuration. 
 * No bazel config provided. Bazel is well documented. Example of how to build containers with Bazel can be [found here](https://github.com/marvin-hansen/bazel-docker) 
+* No native Windows support. Only WSL for now. 
+* Mac not tested. 
+
+## Requirements
+* Ubuntu 20.04.1 LTS (Focal Fossa) environment i.e. Docker / WSL etc.  
+
+## Getting started:
+
+1. git clone https://github.com/marvin-hansen/terra-make.git
+2. cd terra-make
+3. make 
+
+From here, if you have  you can either run any of the commands 
+
 
 ## Usage:
 
