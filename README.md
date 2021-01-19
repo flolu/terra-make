@@ -7,8 +7,6 @@ Important:
 * Google cloud only for now. Porting the scripts to other Cloud proividers largely means replacing the terraform configuration and the glocud references. 
 * No bazel config provided. Bazel is well documented and those who use Bazel already have a working configuration anyway. 
 
-See provided 
-
 ## Usage:
 
 Setup: 
